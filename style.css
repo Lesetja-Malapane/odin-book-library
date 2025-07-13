@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 25vw;
+}
+
+form > * {
+    padding: 20px;
+}
+
+.cards {
+    margin: 20px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50vw;
+    gap: 5px;
+}
+
+.card {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 15px;
+}
