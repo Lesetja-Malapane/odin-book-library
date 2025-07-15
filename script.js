@@ -56,20 +56,28 @@ createNewBookBtn.addEventListener('click', () => {
     title.type = 'text';
     title.placeholder = "Book Title"
     title.name = 'title';
+    title.id = 'title';
 
     let author = document.createElement('input');
     author.placeholder = "Book Author"
     author.type = 'text';
     author.name = 'author';
+    author.id = 'author';
 
     let pages = document.createElement('input');
     pages.placeholder = "Enter Number of pages."
     pages.type = 'number';
     pages.name = 'pages';
+    pages.id = 'pages';
+
+    let readLabel = document.createElement('label');
+    readLabel.htmlFor = 'read';
+    readLabel.textContent = 'Have you read this book?';
 
     let read = document.createElement('input');
     read.type = 'checkbox';
     read.name = 'read';
+    read.id = 'read';
 
     let submit = document.createElement('button');
     submit.type = 'submit';
@@ -98,6 +106,7 @@ createNewBookBtn.addEventListener('click', () => {
     myForm.appendChild(title);
     myForm.appendChild(author);
     myForm.appendChild(pages);
+    myForm.appendChild(readLabel); // Add label before checkbox
     myForm.appendChild(read);
     myForm.appendChild(submit);
 

@@ -1,17 +1,35 @@
-* {
-    padding: 0;
-    margin: 0;
+:root {
+    --my-dark-blue: #4da3f3;
+    --my-blue: #BDE0FE;
+    --my-dark-pink: #fc7eac;
+    --my-pink: #FFC8DD;
+    --my-purple: #e0cdeb;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--my-blue);
 }
 
 form {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     width: 25vw;
+    align-items: center;
 }
 
 form > * {
-    padding: 20px;
+    padding: 15px;
+}
+
+form #read {
+    width: 20px;
+    height: 20px
 }
 
 .cards {
@@ -27,4 +45,36 @@ form > * {
     background-color: whitesmoke;
     border: 1px solid black;
     padding: 15px;
+}
+
+#createNewBook {
+    padding: 15px 20px;
+    background-color: var(--my-pink);
+    border: 1px solid var(--my-dark-blue);
+    border-radius: 5px;
+    color: var(--my-dark-pink);
+}
+
+#title {
+    grid-column: 1 / -1;
+    background-color: var(--my-purple);
+}
+
+#author {
+    grid-column: 1 / -1;
+    background-color: var(--my-purple);
+}
+
+#pages {
+    grid-column: 1 / -1;
+    background-color: var(--my-purple);
+}
+
+form button {
+    width: fit-content;
+    padding: 15px 20px;
+    background-color: var(--my-pink);
+    border: 1px solid var(--my-dark-blue);
+    border-radius: 5px;
+    color: var(--my-dark-pink);
 }
