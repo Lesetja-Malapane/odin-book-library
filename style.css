@@ -74,9 +74,23 @@ form #read {
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
 }
-#createNewBook:hover {
+
+#createNewBook:hover, #rdbtn:hover {
     background: var(--my-dark-pink);
     color: var(--my-white);
+}
+
+#rdbtn {
+    padding: 10px 22px;
+ background: var(--my-pink);
+    border: 1px solid var(--my-dark-blue);
+    border-radius: 4px;
+    color: var(--my-dark-blue);
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: var(--my-shadow);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
 }
 
 .cards {
@@ -128,3 +142,4 @@ form button {
 form button:hover {
     background: var(--my-dark-pink);
 }
+
